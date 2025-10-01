@@ -1,4 +1,4 @@
-﻿# Hotel Booking Backend (Spring Boot + MySQL)
+# Hotel Booking Backend (Spring Boot + MySQL)
 
 ## Prerequisites
 - Java 17+
