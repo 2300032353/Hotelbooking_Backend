@@ -6,6 +6,7 @@ import java.util.List;
 
 @Service
 public class HotelService {
+
     private final HotelRepository hotelRepository;
 
     public HotelService(HotelRepository hotelRepository) {
@@ -17,7 +18,8 @@ public class HotelService {
     }
 
     public Hotel getById(Long id) {
-        return hotelRepository.findById(id).orElseThrow(() -> new RuntimeException("Hotel not found"));
+        return hotelRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Hotel not found"));
     }
 
     public Hotel create(Hotel hotel) {
