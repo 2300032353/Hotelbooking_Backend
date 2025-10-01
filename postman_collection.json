@@ -1,0 +1,50 @@
+﻿{
+  "info": {
+    "name": "Hotel Booking Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Hotels",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {"raw": "http://localhost:8080/api/hotels", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "hotels"]}
+      }
+    },
+    {
+      "name": "Get Hotel By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {"raw": "http://localhost:8080/api/hotels/1", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "hotels", "1"]}
+      }
+    },
+    {
+      "name": "Create Hotel",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"name\": \"Demo Hotel\",\n  \"city\": \"Chennai\",\n  \"address\": \"MG Road\",\n  \"roomsAvailable\": 12,\n  \"pricePerNight\": 1500\n}"},
+        "url": {"raw": "http://localhost:8080/api/hotels", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "hotels"]}
+      }
+    },
+    {
+      "name": "Update Hotel",
+      "request": {
+        "method": "PUT",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"name\": \"Updated Hotel\",\n  \"city\": \"Bengaluru\",\n  \"address\": \"Brigade Road\",\n  \"roomsAvailable\": 8,\n  \"pricePerNight\": 2000\n}"},
+        "url": {"raw": "http://localhost:8080/api/hotels/1", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "hotels", "1"]}
+      }
+    },
+    {
+      "name": "Delete Hotel",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {"raw": "http://localhost:8080/api/hotels/1", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "hotels", "1"]}
+      }
+    }
+  ]
+}
