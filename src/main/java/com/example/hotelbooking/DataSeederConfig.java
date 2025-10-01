@@ -1,4 +1,4 @@
-﻿package com.example.hotelbooking;
+package com.example.hotelbooking;
 
 import com.example.hotelbooking.hotel.Hotel;
 import com.example.hotelbooking.hotel.HotelRepository;

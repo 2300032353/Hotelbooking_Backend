@@ -1,4 +1,4 @@
-﻿package com.example.hotelbooking.hotel;
+package com.example.hotelbooking.hotel;
 
 import jakarta.persistence.*;
 
